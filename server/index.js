@@ -6,7 +6,6 @@ const app = express();
 const router = require('./router');
 const mongoose = require('mongoose');
 
-console.log('above connect');
 //DB setup
 mongoose.connect('mongodb://localhost/auth'); 
 
