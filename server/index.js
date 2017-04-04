@@ -1,3 +1,4 @@
+//Main starting point of the application
 const express = require('express');
 const http = require('http');
 const bodyParser = require('body-parser');
@@ -8,7 +9,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 //DB setup
-mongoose.connect('mongodb://localhost/auth'); 
+mongoose.connect('mongodb://localhost/auth');
 
 mongoose.connection.once('connected', function() {
   console.log("Connected to database")
